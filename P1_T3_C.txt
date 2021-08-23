@@ -1,0 +1,11 @@
+for i in range(0, input("Total de números? ")):
+  total+=int(input("Ingrese un valor: "+str(i)+": "))
+print("El total de la suma es:{} ",total)
+
+
+#Se definir/iniciar la variable total
+#El total de numeros se tiene que convertir a entero
+total=0
+for i in range(0, int(input("Total de números? "))):
+  total+=int(input("Ingrese un valor: "+str(i)+": "))
+print("El total de la suma es:{} ",total)

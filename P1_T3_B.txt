@@ -1,0 +1,17 @@
+u = (1, 2, 3)
+v = (4, 5, 6)
+
+def multiplicar_vector(u, v):
+    for i in u:
+        u[i+1] *= v[i+1]
+    return sum(u)
+
+print(multiplicar_vector(u, v))
+
+#Zip separa las listas por pares (1,4)(2,5)
+#Se define multiplica para almacenar el resultado
+u = [1, 2, 3]
+v = [4, 5, 6]
+multiplica = [x*y for x,y in zip(u,v)]
+print(multiplica)
+

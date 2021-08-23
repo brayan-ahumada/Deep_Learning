@@ -1,0 +1,15 @@
+bruto = input('Cual es el valor bruto del producto: ')
+print(f_aplica_iva(bruto, iva))
+
+def f_aplica_iva(bruto, iva = 19):
+    total_iva = bruto * iva   
+    return total_iva
+
+#Se intercambian las posiciones de print y def
+#El iva es 19%, por lo tanto es 0.19 no 19
+bruto = int(input('Cual es el valor bruto del producto: '))
+def f_aplica_iva(bruto, iva = 0.19): #Hay que definir primero para que muestre el dato correcto
+    total_iva = bruto * iva   
+    return total_iva
+
+print(f_aplica_iva(bruto))
